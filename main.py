@@ -72,8 +72,10 @@ async def leave(ctx):
         await ctx.send("👋 Гарлаа.")
     else:
         await ctx.send("Би одоогоор ямар ч дуут сувагт байхгүй.")
+
 # Bot-ын TOKEN-оо энд бичнэ
-bot.run("YOUR_BOT_TOKEN")
+bot.run(os.environ["DISCORD_TOKEN"])
+
 
 
 source = discord.FFmpegPCMAudio(audio_url, executable="ffmpeg", **FFMPEG_OPTIONS)
