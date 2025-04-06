@@ -74,7 +74,7 @@ async def leave(ctx):
         await ctx.send("Би одоогоор ямар ч дуут сувагт байхгүй.")
 
 # Bot-ын TOKEN-оо энд бичнэ
-bot.run(os.environ["DISCORD_TOKEN"])
+bot.run(os.environ["DISCORD_BOT_TOKEN"])
 
 
 
