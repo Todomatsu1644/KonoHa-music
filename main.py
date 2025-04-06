@@ -67,3 +67,5 @@ async def stop(ctx):
 # Bot-г эхлүүлэх
 TOKEN = os.getenv("DISCORD_BOT_TOKEN")
 bot.run(TOKEN)
+
+source = discord.FFmpegPCMAudio(audio_url, executable="ffmpeg", **FFMPEG_OPTIONS)
